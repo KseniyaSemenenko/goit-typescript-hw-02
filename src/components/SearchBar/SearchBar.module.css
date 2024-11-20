@@ -1,0 +1,25 @@
+.header {
+  background-color: blue;
+  padding: 10px;
+}
+.headerForm {
+  display: flex;
+  justify-content: center;
+}
+.searchInput {
+  outline: transparent;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  background-color: #fafafa;
+  width: 300px;
+}
+.searchBtn {
+  border: none;
+  background-color: #fafafa;
+}
+.searchIcon {
+  color: blue;
+  width: 16px;
+  height: 16px;
+}

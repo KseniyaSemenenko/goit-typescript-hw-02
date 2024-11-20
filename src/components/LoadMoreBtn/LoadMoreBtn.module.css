@@ -1,0 +1,17 @@
+.loadMoreContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loadMoreBtn {
+  background-color: rgb(137, 137, 219);
+  border: 1px solid blue;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 6px 14px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.loadMoreBtn:hover {
+  background-color: rgb(198, 198, 236);
+}

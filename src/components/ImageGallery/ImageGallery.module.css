@@ -1,0 +1,11 @@
+.listPhotoItem {
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 15px;
+}
+.listPhoto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
