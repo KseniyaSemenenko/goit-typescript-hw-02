@@ -1,11 +1,16 @@
 import toast from 'react-hot-toast';
 import css from './SearchBar.module.css';
 import { CiSearch } from 'react-icons/ci';
+import { FormEvent } from 'react';
 
-export default function SearchBar({ onHandleSubmit }) {
-  const handleSubmit = event => {
+interface SearchBarType {
+  onHandleSubmit: (inputValue: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarType> = ({ onHandleSubmit }) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const form = event.target;
+    const form = event.target as HTMLFormElement;
     const inputValue = form.search.value.trim();
     if (inputValue === '') {
       toast.error('Enter a search word!', {
@@ -38,4 +43,5 @@ export default function SearchBar({ onHandleSubmit }) {
       </form>
     </header>
   );
-}
+};
+export default SearchBar;
