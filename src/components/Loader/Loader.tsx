@@ -1,6 +1,6 @@
 import { RotatingLines } from 'react-loader-spinner';
 
-export default function Loader() {
+const Loader: React.FC = () => {
   return (
     <RotatingLines
       visible={true}
@@ -14,4 +14,5 @@ export default function Loader() {
       wrapperClass=""
     />
   );
-}
+};
+export default Loader;
